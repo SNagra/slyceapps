@@ -1,0 +1,380 @@
+html {
+	overflow-x: auto;
+	height: 100%;
+}
+
+body {
+	background-image: url(extra_clean_paper.png);
+	background-repeat: repeat repeat;
+	width: auto;
+	height: 100%;
+	margin-left: 15%;
+	padding-bottom: 100px;
+}
+
+.move {
+	margin-left: 3%;
+
+	}
+
+.break {
+	width: 93%;
+	margin: 2.5%;
+	height: 0px;
+	float: left;
+	border-top: 1px solid rgba(0,0,0,0.25);
+	border-bottom: 1px solid rgba(255,255,255,0.35);
+}
+
+.header {
+	width: auto;
+	height: 500px;
+	background-image: url(promoHeader2.png);
+	background-size: 2500px;
+	background-position: 55% 0%;
+	background-color: rgb(255,255,255);
+	background-repeat: no-repeat;
+	box-shadow: inset 0px -8px 10px rgba(0,0,0,0.25);
+}
+
+.product-slyce {
+	margin-top: 10px;
+	margin-bottom: -10px;
+	text-align: center;
+	font-size: 12px;
+	color: rgba(0,0,0,0.3);
+}
+
+.product-slyce a {
+	font-weight: bold;
+	color: rgba(0,0,0,0.5);
+}
+
+.container {
+	width: auto;
+	height: 100%;
+	box-shadow: 0px -5px 8px rgba(0,0,0,0.25);
+}
+
+.content {
+	height: 100%;
+	margin-left: auto;
+}
+
+.investment-header {
+	text-align: center;
+	font-size: 75px;
+	line-height: 75px;
+	text-shadow: 0px 2px 0px white;
+	margin: 25px;
+	margin-left: 0px;
+}
+
+.sign-up {
+	float: left;
+	margin-left: 10%;
+	margin-top: 50px;
+}
+
+.subscribe-box {
+	height: 425px;
+	width: 500px;
+	border-radius: 50px;
+	background-color: rgba(255,255,255,0.50);
+}
+
+.subscribe-box a:hover {
+	text-decoration: none;
+}
+
+.sign-up-form {
+	margin-top: 25px;
+	margin-left: 100px;
+	width: 300px;
+	height: 25px;
+}
+
+.sign-up-copy {
+	font-weight: bold;
+	text-align: center;
+	margin: 10px;
+	margin-left: 30px;
+	margin-right: 30px;
+	margin-bottom: -10px;
+	text-shadow: 0px 1px 0px rgba(255,255,255,1.0);
+}
+
+.sign-up-beta-copy {
+	margin-left: 60px;
+	margin-right: 60px;
+	font-weight: bold;
+	font-style: italic;
+	text-align: center;
+}
+
+.secure-green {
+	color: rgba(1, 213, 91, 1.0);
+	text-shadow: 0px 0px 0px rgba(255,255,255, 1.0), 0px -1px 0px rgba(31, 125, 66, 1.0);
+	font-weight: bold;
+	font-size: 15px;
+}
+
+.secure-blue {
+	color: rgba(0,134,204,1.0);
+	font-weight: bold;
+	font-size: 15px;
+}
+
+.title {
+	font-size: 65px;
+	text-align: center;
+	line-height: 65px;
+	color: rgba(0,134,204,1.0);
+	text-shadow: 0px 2px 0px rgba(255,255,255, 1.0), 0px -2px 0px rgba(0,104,184, 1.0);
+	padding-top: 15px;
+}
+
+.btn-sign-up {
+	margin: 15px;
+	margin-left: 190px;
+	width: 310px;
+	height: 50px;
+	text-align: center;
+	font-size: 25px;
+	font-weight: bold;
+}
+
+.features-container {
+	width: 100%;
+}
+
+.features {
+	width: 1000px;
+}
+
+.feature-box {
+	border-radius: 10px;
+	box-shadow: 0px 0px 5px rgba(0,0,0,0.5);
+	width: 400px;
+	height: 300px;
+	float: left;
+	margin: 25px;
+	list-style: none;
+	background-color: rgba(255,255,255,0.5);
+	padding-top: 25px;
+}
+
+.features-icons {
+	width: 100%;
+	text-align: center;
+	margin-top: 25px;
+	font-size: 100px;
+	text-shadow: 0px 2px 0px rgba(255,255,255, 1.0);
+	background-image: none;
+}
+
+.features .feature-box h1 {
+	text-align: center;
+}
+
+.features-list-description {
+	margin: 20px;
+	padding-left: 25px;
+	padding-right: 25px;
+}
+
+.use-cases {
+	top: 1500px;
+	left: 0px;
+	width: 850px;
+	margin-top: 950px;
+	margin-left: 50px;
+	border-radius: 10px;
+	background-color: rgba(0,0,0,0.25);
+	box-shadow: inset 0px 0px 5px rgba(0,0,0,0.25);
+	margin-bottom: 100px;
+	height: 1225px;
+	padding-top: 10px;
+}
+
+.use-case-title {
+	width: 100%;
+	text-align: center;
+	text-shadow: 0px 2px 0px rgba(255,255,255,1.0);
+	padding: 10px;
+}
+
+.examples-table {
+	list-style: none;
+	margin-top: 50px;
+}
+
+.example-left {
+	float: left;
+}
+
+.example-right {
+	float: right;
+	margin-right: 25px;
+}
+
+.example-pic {
+	border-radius: 200px;
+	border-style: solid;
+	border-width: 10px;
+	border-color: rgba(255,255,255,1.0);
+	width: 300px;
+	height: 300px;
+	background-image: url(Wood_floor.jpeg);
+	background-size: 532px 400px;
+	box-shadow: 0px 5px 10px rgba(0,0,0,0.5);
+	float: left;
+}
+
+.example-pic2 {
+	border-radius: 200px;
+	border-style: solid;
+	border-width: 10px;
+	border-color: rgba(0,144,218,1.0);
+	width: 300px;
+	height: 300px;
+	background-color: rgba(255,255,255,1.0);
+	background-size: 532px 400px;
+	box-shadow: 0px 5px 10px rgba(0,0,0,0.5);
+	float: left;
+}
+
+.iPad1 {
+	width: 200px;
+	height: 154px;
+	margin-left: 50px;
+	margin-top: 73px;
+	border-radius: 8px;
+/*	box-shadow: inset 0px 0px 10px rgba(0,0,0,1.0);*/
+}
+
+.example-pic3 {
+	border-radius: 200px;
+	border-style: solid;
+	border-width: 10px;
+	border-color: rgba(0,144,218,1.0);
+	width: 300px;
+	height: 300px;
+	background-image: url(movie.mount.jpeg);
+	background-color: rgba(255,255,255,1.0);
+	background-position: 45% 0%;
+	overflow: hidden;
+	box-shadow: 0px 5px 10px rgba(0,0,0,0.5);
+	float: left;
+}
+
+.iPad2 {
+	margin-left: 50px;
+	margin-top: 73px;
+	border-radius: 8px;
+}
+
+.description-left {
+	margin: 25px;
+	margin-top: 50px;
+	text-align: center;
+	width: 450px;
+	float: right;
+}
+
+.description-right {
+	margin: 25px;
+	margin-top: 50px;
+	margin-left: 0px;
+	text-align: center;
+	width: 450px;
+	float: left;
+}
+
+.description-title {
+	color: rgba(255,255,255,1.0);
+	text-shadow: 0px -2px 0px rgba(0,0,0,0.5);
+}
+
+.description-copy {
+	font-size: 25px;
+	line-height: 25px;
+}
+
+.table-end {
+	text-align: center;
+	font-size: 30px;
+	font-style: italic;
+	color: rgba(255,255,255,1.0);
+	text-shadow: 0px -2px 0px rgba(0,0,0,0.5);
+}
+
+.footer {
+	width: 100%;
+	background-color: rgba(25,25,25,1.0);
+	height: 250px;
+	top: 2800px;
+	position: absolute;
+}
+
+.footer-container {
+	position: absolute;
+	margin-left: -10px;
+}
+
+.footer-table {
+	width: 150px;
+	list-style: none;
+	margin-top: 45px;
+	margin-left: 25px;
+	margin-right: 20px;
+	float: left;
+}
+
+.footer-table a {
+	font-size: 20px;
+	color: rgba(255,255,255,0.5);
+	text-shadow: 0px -2px 0px rgba(0,0,0,1.0);
+}
+
+.footer-table-header {
+	font-size: 25px;
+	color: rgba(255,255,255,1.0);
+	text-shadow: 0px -2px 0px rgba(0,0,0,1.0);
+	margin-bottom: 15px;
+	font-weight: bold;
+}
+
+.footer-table-list {
+	margin: 5px;
+	margin-bottom: 7px;
+}
+
+.table-created-by {
+	position: absolute;
+	margin-left: 50px;
+	margin-top: 50px;
+}
+
+.table-other-apps {
+	position: absolute;
+	margin: 245px;
+	margin-top: 50px;
+}
+
+.table-logo {
+	position: absolute;
+	margin-left: 440px;
+}
+
+.table-contact {
+	position: absolute;
+	margin-left: 630px;
+	margin-top: 50px;
+}
+
+.table-credits {
+	position: absolute;
+	margin-left: 825px;
+	margin-top: 50px;
+}

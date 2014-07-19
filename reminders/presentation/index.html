@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+		<meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+        <title>Reminders With Friends</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <meta name="description" content="Slideshow with jmpress.js" />
+        <meta name="keywords" content="jmpress, slideshow, container, plugin, jquery, css3" />
+        <meta name="author" content="Slyce" />
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:700,300,300italic' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" type="text/css" href="css/demo.css" />
+        <link rel="stylesheet" type="text/css" href="css/style.css" />
+		<!--[if lt IE 9]>
+		<link rel="stylesheet" type="text/css" href="css/style_ie.css" />
+		<![endif]-->
+		<!-- jQuery -->
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+		<!-- jmpress plugin -->
+		<script type="text/javascript" src="js/jmpress.js"></script>
+		<!-- jmslideshow plugin : extends the jmpress plugin -->
+		<script type="text/javascript" src="js/jquery.jmslideshow.js"></script>
+		<script type="text/javascript" src="js/modernizr.custom.48780.js"></script>
+		<noscript>
+			<style>
+			.step {
+				width: 100%;
+				position: relative;
+			}
+			.step:not(.active) {
+				opacity: 1;
+				filter: alpha(opacity=99);
+				-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(opacity=99)";
+			}
+			.step:not(.active) a.jms-link{
+				opacity: 1;
+				margin-top: 40px;
+			}
+			</style>
+		</noscript>
+    </head>
+    <body>
+        <div class="container">
+			<section id="jms-slideshow" class="jms-slideshow">
+				<div class="step" data-color="color">
+					<div class="jms-content">
+						<h3 style="color:rgba(38, 101, 196, 1); font-size: 70px" >Reminders with Friends</h3>
+						<p style="color:rgba(38, 101, 196, 1)">The best way to make sure you and your friends are always on the same page.</p>
+						<!-- <a class="jms-link" href="#">Read more</a> -->
+					</div>
+					<img class="appIcon" src="images/Icon@Big.png" />
+				</div>
+				<div class="step" data-color="color-2" data-y="500" data-scale="0.4" data-rotate-x="30">
+					<img class="iphone1" src="images/iphone-1.png" />
+					<div class="jms-content">
+						<h3>Keep your friends up to date.</h3>
+						<p>By setting and sending alarms to your friends, everyone will remember important information together.</p>
+						<!-- <a class="jms-link" href="#">Read more</a> -->
+					</div>
+				</div>
+				<div class="step" data-color="color-3" data-x="2000" data-z="3000" data-rotate="170">
+					<div class="jms-content">
+						<h3>Location, Location, Location</h3>
+						<p>Easily and effortlessly attach reminders to certain locations, so the next time you leave or enter that location, your reminder pops up automaticaly.</p>
+						<!-- <a class="jms-link" href="#">Read more</a> -->
+					</div>
+					<img class="iphone2" src="images/iphone-2.png" />
+				</div>
+				<div class="step" data-color="color-4" data-x="3000">
+					<div class="jms-content">
+						<h3 style="font-size: 70px">Create Easily</h3>
+						<p style="width: 200px; height: 400px; margin-left: 0px; font-size: 60px">Creating new reminders is easy, powerful, and customizable.</p>
+						<!-- <a class="jms-link" href="#">Read more</a> -->
+					</div>
+					<img class="iphone3" src="images/iphone-3.png" />
+				</div>
+				<div class="step" data-color="color-5" data-x="4500" data-z="1000" data-rotate-y="45">
+					<div style="margin-top: -45px" class="jms-content">
+						<h3 style="font-size: 80px; color:rgba(38, 101, 196, 1)">Connect</h3>
+						<p style="font-size: 60px; color:rgba(38, 101, 196, 1)">Facebook and Twitter integration.</p>
+						<!-- <a class="jms-link" href="#">Read more</a> -->
+					</div>
+					<img class="iphone5" src="images/iphone-5.png" />
+				</div>
+			</section>
+        </div>
+		<script type="text/javascript">
+			$(function() {
+			
+				$( '#jms-slideshow' ).jmslideshow();
+				
+			});
+		</script>
+    </body>
+</html>

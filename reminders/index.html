@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Reminders With Friends</title>
+    <meta name="description" content="Remember what's important.">
+    <meta name="author" content="Slyce">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Styles -->
+    <link href="http://www.slyceapps.com/assets/css/bootstrap.css" rel="stylesheet">
+    <link href="http://www.slyceapps.com/assets/css/bootstrap-responsive.css" rel="stylesheet">
+    <link href="http://www.slyceapps.com/assets/css/docs.css" rel="stylesheet">
+    <link href="http://www.slyceapps.com/assets/css/font-awesome.css" rel="stylesheet">
+    <!-- /Styles -->
+
+    <link rel="shortcut icon" href="http://www.slyceapps.com/images/favicon.ico">
+
+
+    <!-- Google + Script Call -->
+  <script type="text/javascript" src="https://apis.google.com/js/plusone.js"></script>
+  <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+  <!-- /Google + Script Call -->
+  </head>
+
+  <body>
+    <!-- Facebook Share Button -->
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+  <!-- /Facebook Share Button -->
+
+    <!-- Navbar
+     ==================================================-->
+    <div class="navbar navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+          <a class="brand" href="http://www.slyceapps.com">Slyce</a>
+          <div class="nav-collapse">
+            <ul class="nav">
+              <li class="divider-vertical"></li>
+              <li><a href="http://www.slyceapps.com">Home</a></li>
+              <li class="dropdown">
+                <a href="#"
+                    class="dropdown-toggle"
+                    data-toggle="dropdown">
+                    Apps
+                    <b class="caret"></b>
+                </a>
+                  <ul class="dropdown-menu">
+                    <li class="active" >
+                      <a href="http://www.slyceapps.com/reminders">Reminders With Friends</a>
+                    </li>
+                    <li>
+                      <a href="http://www.slyceapps.com/lyricaly">Lyricaly</a>
+                    </li>
+                    <li>
+                      <a href="http://www.slyceapps.com/hiiire">Hiiire</a>
+                    </li>
+                    <li>
+                      <a href="http://www.slyceapps.com/shottracker">Basketball Shot Tracker HD</a>
+                    </li>
+                  </ul>
+                </li>
+              <li><a href="http://www.slyceapps.com/triggr">Triggr</a></li>
+              <li><a href="http://blog.slyceapps.com">Blog</a></li>
+              <li class="dropdown">
+                <a href="#"
+                    class="dropdown-toggle"
+                    data-toggle="dropdown">
+                    Reach Us
+                    <b class="caret"></b>
+                </a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a href="http://www.slyceapps.com/support">Support</a>
+                    </li>                    
+                    <li>
+                      <a href="http://www.slyceapps.com/contact">Contact Us</a>
+                    </li>
+                  </ul>
+                </li>
+              <li><a href="http://www.slyceapps.com/consulting">Consulting</a></li>
+              <li><a href="http://www.slyceapps.com/about">About</a></li>
+            </ul>
+             <form class="navbar-search pull-right">
+                <input type="text" id="st-search-input" placeholder="Search" class="search-query span2"/>
+                <div id="st-results-container" class="dropdown-menu"></div>
+                  <script type="text/javascript">
+                    var Swiftype = window.Swiftype || {};
+                    (function() {
+                      Swiftype.key = 'SLsMvqsi9bmCasXokr8p';
+                      Swiftype.inputElement = '#st-search-input';
+                      Swiftype.resultContainingElement = '#st-results-container';
+                      Swiftype.attachElement = '#st-search-input';
+                      Swiftype.renderStyle = "overlay";
+
+                      var script = document.createElement('script');
+                      script.type = 'text/javascript';
+                      script.async = true;
+                      script.src = "//swiftype.com/embed.js";
+                      var entry = document.getElementsByTagName('script')[0];
+                      entry.parentNode.insertBefore(script, entry);
+                    }());
+                  </script> 
+            </form>
+          </div><!--/.nav-collapse -->
+        </div>
+      </div>
+    </div> <!-- /Navbar -->
+
+    <div class="container-fluid">
+
+      <!-- Masthead 
+      ============================================== -->
+      <header>
+          <div class="jumbotron subhead">
+        <h1>
+          <div class="span9 reminders-title" style="margin-bottom: 20px">
+            Reminders With Friends
+          </div>
+        </h1> 
+          </div>
+            <div class="span5" style="float: right; width: 125px; height: 70px; margin: 10px">
+               <div class="" stlye="">
+                <g:plusone size="medium"></g:plusone>
+               </div>
+            <div class="" style="">
+                 <a href="https://twitter.com/share" class="twitter-share-button" data-via="SlyceApps" data-size="medium" data-related="SlyceApps" data-hashtags="RemindersWithFriends">Tweet</a>
+            </div>
+            <div class="" style="">
+                 <div class="fb-like" data-href="http://www.slyceapps.com/reminders" data-send="false" data-layout="button_count" data-width="130" data-show-faces="false"></div>
+            </div>
+          </div>
+        </header>
+        <br>
+        <br>
+        <br>
+    <!--========================================== -->
+
+    <!-- Main Image Banner
+    ============================================ -->
+      <div class="row-fluid">
+        <div class="span6 reminders-copy">
+            <h1><strong>Create</strong> and <strong>Share</strong> reminders like never before.  With the ability to create <strong>location and time based reminders</strong> you and your friends can remember important events and tasks together.</h1>
+            <br>
+            <!-- Download on iTunes Button -->
+            <a class="shot-tracker-btn btn btn-primary btn-large" href="http://itunes.apple.com/us/app/reminders-with-friends/id486230629?ls=1&mt=8">
+              <i class="icon-download" style="margin: 5px; font-size: 20px;"></i>Download for Free!
+            </a>
+            
+            <!-- Comment Out From here -->
+            <!-- <h5>*Sign up to be notified of launch and receive a <strong>free promo code to remove all ads.</strong></h5>
+            <div id="mc_embed_signup">
+              <form action="http://slyceapps.us5.list-manage2.com/subscribe/post?u=50907a068ea688441362c637a&amp;id=fc386e45d4" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank">
+              <div class="mc-field-group input-prepend">
+                <span class="add-on"><i class="icon-envelope"></i></span>
+                <input type="email" value="" name="EMAIL" class="required email input-xlarge focused" placeholder="Email address" id="mce-EMAIL">
+              </div>
+                <div id="mce-responses" class="clear">
+                  <div class="response" id="mce-error-response" style="display:none"></div>
+                  <div class="response" id="mce-success-response" style="display:none"></div>
+                </div>
+              <div class="clear"><input type="submit" value="Sign Up For Free!" name="subscribe" id="mc-embedded-subscribe" class="btn btn-primary btn-large"></div>
+              </form>
+            </div> --> <!-- to here -->
+        </div> 
+        <div class="span6">
+            <img style="margin: auto; display:block" src="http://www.slyceapps.com/images/iphonesright.png" alt="">
+        </div>
+      </div> 
+      <div class="modal fade hide in" id="signup">
+        <div class="modal-header">
+          <a class="close" data-dismiss="modal">×</a>
+          <h1>Reminders With Friends</h1>
+        </div>
+        <div class="modal-body">
+            <!-- Begin MailChimp Signup Form -->
+            <div id="mc_embed_signup">
+              <form action="http://slyceapps.us5.list-manage2.com/subscribe/post?u=50907a068ea688441362c637a&amp;id=fc386e45d4" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank">
+                  <!-- Download on iTunes Button -->
+            <!-- <a class="shot-tracker-btn btn btn-primary btn-large" href="http://itunes.apple.com/us/app/reminders-with-friends/id486230629?ls=1&mt=8">
+              <i class="icon-download" style="margin: 5px; font-size: 20px;"></i>Download for Free!
+            </a> -->
+                 <h4 style="text-align: center">Join the Launch List and receive a <strong>free promo code to remove all ads.</strong></h4>
+                 <br>
+              <div class="mc-field-group">
+                <input type="email" value="" name="EMAIL" class="required email input-xlarge focused" placeholder="Email Address" style="margin-left: 20%" id="mce-EMAIL">
+              </div>
+                <div id="mce-responses" class="clear">
+                  <div class="response" id="mce-error-response" style="display:none"></div>
+                  <div class="response" id="mce-success-response" style="display:none"></div>
+                </div>
+              <div class="clear"><input type="submit" value="Sign Up" name="subscribe" id="mc-embedded-subscribe" class="btn btn-primary btn-large" style="margin-left: 20%"></div>
+              </form>
+            </div>
+            <!--End mc_embed_signup-->
+        </div>
+       
+      </div> <!-- /Modal -->
+    <!-- ======================================= -->
+      
+      <div class="row-fluid">
+          <h3 class="" style="text-align: center; font-size: 40px; line-height: 110%">Remember What's Important.</h3>
+        
+        <hr style="margin:20px">
+      </div>
+
+
+      <!-- Features Table 
+      ================================================== -->
+          <div class="span3">
+            <a href="http://itunes.apple.com/us/app/reminders-with-friends/id486230629?ls=1&mt=8" style="display: block; margin: auto"><img src="http://www.slyceapps.com/images/Icon@Big.png" class="appIcon" style="display: block; margin: auto"></a>
+          </div> 
+          <div class="span9">
+          <h2 class="">Features</h2>
+          <table class="table table-bordered table-striped">
+            <tbody>
+              <tr>
+                <td><span>Will be available for <strong>free</strong>.</span></td>
+              </tr>
+              <tr>
+                <td><span>Set both location and time based reminders.</span></td>
+              </tr>
+              <tr>
+                <td><span>Have reminders pop-up when you leave or enter a location.</span></td>
+              </tr>
+              <tr>
+                <td><span>You are able to set reminders for yourself, a friend, or a group of friends.</span></td>
+              </tr>
+              <tr>
+                <td><span>Easily connect with Facebook friends.</span></td>
+              </tr>
+              <tr>
+                <td><span>Your reminders will be saved to the cloud so you don't have worry about losing them.</span></td>
+              </tr>
+              <tr>
+                <td><span>Search for locations with keywords or an exact address.</span></td>
+              </tr>
+              <tr>
+                <td><span>Reminder alert will pop up on your friend's phone at the time or location that you specify.</span></td>
+              </tr>
+              <tr>
+                <td><span>Built for iOS.</span></td>
+              </tr>
+            </tbody>
+          </table>
+          </div> 
+      <!-- ================================================== -->
+    
+      <div class="footer span12" style="padding: 10px">
+        <strong>
+          &copy;Slyce
+        </strong> 
+        <a class="" href="https://twitter.com/SlyceApps" class="twitter-follow-button" data-show-count="false" data-size="large">Follow @SlyceApps</a>
+      </div>
+          
+          </div> <!-- /container -->
+    
+
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+    <script src="http://www.slyceapps.com/assets/js/jquery.js"></script>
+    <script src="http://www.slyceapps.com/assets/js/bootstrap-dropdown.js"></script>
+    <script src="http://www.slyceapps.com/assets/js/bootstrap-tab.js"></script>
+    <script src="http://www.slyceapps.com/assets/js/bootstrap-button.js"></script>
+    <script src="http://www.slyceapps.com/assets/js/bootstrap-collapse.js"></script>
+    <script src="http://www.slyceapps.com/assets/js/bootstrap-modal.js"></script>
+    <script src="http://www.slyceapps.com/assets/js/bootstrap-alert.js"></script>
+    <script src="http://www.slyceapps.com/assets/js/bootstrap-transition.js"></script>
+    
+    <!-- Start of StatCounter Code for Default Guide -->
+<script type="text/javascript">
+var sc_project=7384130; 
+var sc_invisible=1; 
+var sc_security="f03ca243"; 
+</script>
+<script type="text/javascript"
+src="http://www.statcounter.com/counter/counter.js"></script>
+<noscript><div class="statcounter"><a title="hit counter
+for tumblr" href="http://statcounter.com/tumblr/"
+target="_blank"><img class="statcounter"
+src="http://c.statcounter.com/7384130/0/f03ca243/1/"
+alt="hit counter for tumblr"></a></div></noscript>
+<!-- End of StatCounter Code for Default Guide -->
+
+  </body>
+</html>

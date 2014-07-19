@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Slyce Consulting</title>
+    <meta name="description" content="Developing For Tomorrow.">
+    <meta name="author" content="Slyce">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Styles -->
+    <link href="http://www.slyceapps.com/assets/css/bootstrap.css" rel="stylesheet">
+    <link href="http://www.slyceapps.com/assets/css/bootstrap-responsive.css" rel="stylesheet">
+    <link href="http://www.slyceapps.com/assets/css/docs.css" rel="stylesheet">
+    <link href="http://www.slyceapps.com/assets/css/font-awesome.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Oleo+Script:700' rel='stylesheet' type='text/css'>
+
+    <!-- Le fav and touch icons -->
+    <link rel="shortcut icon" href="http://www.slyceapps.com/images/favicon.ico">
+    <link rel="apple-touch-icon" href="http://www.slyceapps.com/images/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="http://www.slyceapps.com/images/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="http://www.slyceapps.com/images/apple-touch-icon-114x114.png">
+
+    <!--Load the AJAX API-->
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type="text/javascript">
+
+      // Load the Visualization API library and the piechart library.
+      google.load('visualization', '1.0', {'packages':['corechart']});
+      google.setOnLoadCallback(drawVisualization);
+
+      function drawVisualization() {
+        drawChartA();
+        drawChartB();
+      }
+
+      // Callback that creates and populates a data table, 
+      // instantiates the pie chart, passes in the data and
+      // draws it.
+      function drawChartA() {
+
+      // Create the data table.
+      var data = new google.visualization.DataTable();
+      data.addColumn('string', 'Web Usage');
+      data.addColumn('number', 'Mobile OS');
+      data.addRows([
+        ['iOS', 47.38],
+        ['Android', 38.28],
+        ['Other', 14.34]
+      ]);
+
+      // Set chart options
+      var options = {'title':'Mobile Web Presence',
+                     'width':400,
+                     'height':300};
+
+      // Instantiate and draw our chart, passing in some options.
+      var chart = new google.visualization.PieChart(document.getElementById('chart_divA'));
+      chart.draw(data, options);
+    }
+
+    function drawChartB() {
+        var data = google.visualization.arrayToDataTable([
+          ['Device', 'Available Apps'],
+          ['iOS',  500000],
+          ['Android',  250000],
+        ]);
+
+        var options = {
+          'width':400,
+          'height':300,
+          title: 'Number of Apps Available for OS',
+        };
+
+        var chart = new google.visualization.ColumnChart(document.getElementById('chart_divB'));
+        chart.draw(data, options);
+      }
+
+    </script>
+  </head>
+
+  <body>
+    <!-- Navbar
+     ==================================================-->
+    <div class="navbar navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+          <a class="brand" href="http://www.slyceapps.com">Slyce</a>
+          <div class="nav-collapse">
+            <ul class="nav">
+              <li class="divider-vertical"></li>
+              <li><a href="http://www.slyceapps.com">Home</a></li>
+              <li class="dropdown">
+                <a href="#"
+                    class="dropdown-toggle"
+                    data-toggle="dropdown">
+                    Apps
+                    <b class="caret"></b>
+                </a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a href="http://www.slyceapps.com/reminders">Reminders With Friends</a>
+                    </li>
+                    <li>
+                      <a href="http://www.slyceapps.com/lyricaly">Lyricaly</a>
+                    </li>
+                    <li>
+                      <a href="http://www.slyceapps.com/hiiire">Hiiire</a>
+                    </li>
+                    <li>
+                      <a href="http://www.slyceapps.com/shottracker">Basketball Shot Tracker HD</a>
+                    </li>
+                  </ul>
+                </li>
+              <li><a href="http://www.slyceapps.com/triggr">Triggr</a></li>
+              <li><a href="http://blog.slyceapps.com">Blog</a></li>
+              <li class="dropdown">
+                <a href="#"
+                    class="dropdown-toggle"
+                    data-toggle="dropdown">
+                    Reach Us
+                    <b class="caret"></b>
+                </a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a href="http://www.slyceapps.com/support">Support</a>
+                    </li>                    
+                    <li>
+                      <a href="http://www.slyceapps.com/contact">Contact Us</a>
+                    </li>
+                  </ul>
+                </li>
+              <li class="active"><a href="http://www.slyceapps.com/consulting">Consulting</a></li>
+              <li><a href="http://www.slyceapps.com/about">About</a></li>
+            </ul>
+             <form class="navbar-search pull-right">
+                <input type="text" id="st-search-input" placeholder="Search" class="search-query span2"/>
+                <div id="st-results-container" class="dropdown-menu"></div>
+                  <script type="text/javascript">
+                    var Swiftype = window.Swiftype || {};
+                    (function() {
+                      Swiftype.key = 'SLsMvqsi9bmCasXokr8p';
+                      Swiftype.inputElement = '#st-search-input';
+                      Swiftype.resultContainingElement = '#st-results-container';
+                      Swiftype.attachElement = '#st-search-input';
+                      Swiftype.renderStyle = "overlay";
+
+                      var script = document.createElement('script');
+                      script.type = 'text/javascript';
+                      script.async = true;
+                      script.src = "//swiftype.com/embed.js";
+                      var entry = document.getElementsByTagName('script')[0];
+                      entry.parentNode.insertBefore(script, entry);
+                    }());
+                  </script>
+            </form>
+          </div><!--/.nav-collapse -->
+        </div>
+      </div>
+<!--       <ul class="breadcrumb" style="position: fixed; z-index: 1000">
+        <li>
+          <a href="#">Top</a> <span class="divider">/</span>
+        </li>
+        <li>
+          <a href="#consulting-contact">Contact Info</a> <span class="divider">/</span>
+        </li>
+      </ul> -->
+    </div> <!-- /Navbar -->
+
+    <div class="container-fluid">
+
+
+      <!--Masthead
+      ================================================== -->
+        <header class="jumbotron subhead consulting-title span12" id="overview" style="text-align: center">
+    		  <h1>Consulting and Product Development</h1> 
+          <p class="lead"></p>
+      	</header>
+      <!-- Carousel
+      ================================================== -->
+      <div class="row">
+        <div class="span12 columns">
+          <div class="span12" style="text-align: center">
+            <h2 class="shadow-inverted">
+              As the world goes mobile, there is a growing need for businesses to maintain a presence in the mobile market and to integrate the best that mobile has to offer into their business arsenal.
+            </h2>
+            <hr>
+            <div class="span6 well">
+              <h3 class="white-shadow">
+                The iOS platform continues to be a fast growing and rich ecosystem with much to offer to companies, whether it is a marketing tool or an enterprise tool used to modernize business practices.
+                <br />
+                <br />
+                <ul style="text-align: left">
+                  <li class="white-shadow">
+                    Use iOS apps and iAds as a targeted approach to get users more connected and involved in your brand.
+                  </li>
+                  <br />
+                  <li class="white-shadow">
+                    Make your company workflow more efficient by building custom enterprise applications on top of a robust iOS platform.
+                  </li>
+                </ul>
+              </h3>
+            </div>
+            <div id="consulting-contact" class="span5">
+              <h3 class="shadow-inverted">Consulting and Development Contact Info</h3>
+              <table class="table table-bordered table-striped">
+                <tbody>
+                  <tr>
+                    <td><strong><i class="icon-user"></i> Phone</strong></td>
+                    <td>559-492-0277</td>
+                  </tr>
+                  <tr>
+                    <td><strong><i class="icon-envelope"></i> email</strong></td>
+                    <td>consulting@slyceapps.com</td>
+                  </tr>
+                  <tr>
+                    <td><strong><i class="icon-twitter-sign"></i> Twitter</strong></td>
+                    <td>@SlyceApps</td>
+                  </tr>
+                  <tr>
+                    <td><strong><i class="icon-home"></i> Home Base</strong></td>
+                    <td>Fresno, CA</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h3 class="grey-shadow">Contact us to sit down together and storyboard out your great idea. We will help you put your thoughts on papers so that we can build a great plan together.</h3>
+            </div>
+
+            <hr class="span8 offset2">
+
+            <div class="span12 charts">
+              <div id="iOS_daily_downloads" class="iOS_downloads span3">
+                <h1 class="grey-shadow" style="font-style: italic; margin-bottom: 10px; text-align: center">Why Choose iOS?</h1>
+                <ul  class="why_ios_bullets" style="text-align: left">
+                  <li class=""> Over <span class="daily_devices">367,000 iOS devices sold per day</span>.</li>
+                  <li> Apple leads all other companies in brand <span class="loyalty">loyalty</span>.</li>
+                  <li> Save costs and development time by <span class="fragmentation">avoiding the fragmentation</span> presented by Android</li>
+                  <li>iOS leads the mobile marketplace in Apps available and Apps downloaded, don't be left behind. You need our help to stand out from the crowd, we have a track record of high download volumes and high rated Apps.</li>
+                </ul>
+              </div>
+              <div id="chart_divA" class="pieChart span4"></div>
+              <div id="chart_divB" class="span3"></div>
+            </div> <!-- /charts -->
+            <div class="span12">
+              <hr>
+              <h1 class="shadow-inverted"><i class="icon-cogs icon-large"></i>Our Toolset</h1>
+              <div class="span10" style="text-align: left">
+                <dl>
+                  <dt><h2>Every Company is unique and your App should be too</h2></dt>
+                  <dd><strong>Don't let someone fit your company into a cookie cutter template.</strong>
+                    <ul>
+                      <li>At Slyce, we recognize that every company has a unique vision of what who they are and we respect that. We do not try and sell pre-made templates of Apps, but rather like to get an idea of who you are in order to present the best custom application for your company</li>
+                    </ul>
+                  </dd>
+                  <dt><h2>Custom iPhone and iPad Development for Enterprise</h2></dt>
+                  <dd><strong>As your business grows, there is a constant need for your employees to stay connected.</strong>
+                    <ul class="">
+                      <li>Custom inventory applications that free you of expensive and bulky proprietory hardware</li>
+                        <ul>
+                          <li>Personalized software and database that scales to your companies needs.</li>
+                          <li>Ability to utilize the great iPhone and iPad cameras as bar code and QR code scanners to help keep track of inventory or product.</li>
+                        </ul>
+                      <li>Take full advantage of Apple hardware to help optimize your business</li>
+                        <ul>
+                          <li>Leverage the use of GPS on the iPhone to help keep track and monitor your employees doing business on the road.</li>
+                          <li>Take advantage of wireless capabilities in order to cut the cord and slim down your hardware from laptops to iPhones and iPads.</li>
+                          <li>Use custom made digital forms to save money and time devoted to typing hand written data into a computer.</li>
+                        </ul>
+                    </ul>
+                  </dd>
+                  <dt><h2>Build a marketing attack centered around the iOS platform</h2></dt>
+                  <dd><strong>There are hundreds of millions of iOS users out there waiting for the next company to take their attention.</strong>
+                    <ul>
+                      <li>Let Slyce build a full fledged new age marketing campaign to take your company where your client's eyes spend the most time, on their mobile devices.</li>
+                      <li>Use custom mobile applications as an alternative to traditional marketing by allowing customers to interact with your company's brand in a unique and fun environment.</li>
+                      <li>Slyce can work with you to build you a fun and interactive advertising campaign utilizing Apple's rich iAds toolset.</li>
+                    </ul>
+                  </dd>
+                </dl>
+                <h5 class="local">We are a custom iPhone and iPad developing company based out of <i class="icon-home"></i>Fresno, California.  Stay local and help encourage talent to stay in Central California.<h5>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <br>
+        <!-- App Icons -->
+        <div class="row">
+        <div class="well span12">
+            <h1 class="white-shadow current-apps">Check out some of our current applications available for iOS</h1>
+            <hr>
+            <div class="span3 offset1">
+              <a href="http://itunes.apple.com/us/app/basketball-shot-tracker-hd/id479103761?ls=1&mt=8"><img src="http://www.slyceapps.com/images/ShotTracker@Big.png" class="appIcon" style="margin: auto; display:block"></a>
+              <h3 style="text-align: center; margin-bottom: 20px">Basketball Shot Tracker HD</h3>
+            </div>
+
+            <div class="span3">
+              <a href="http://itunes.apple.com/us/app/reminders-with-friends/id486230629?ls=1&mt=8"><img src="http://www.slyceapps.com/images/Icon@Big.png" class="appIcon" style="margin: auto; display:block"></a>
+              <h3 style="text-align: center; margin-bottom: 20px">Reminders with Friends</h3>
+            </div> 
+
+            <div class="span3">
+              <a href="http://www.slyceapps.com/lyricaly"><img src="http://www.slyceapps.com/images/LyricalyIcon.png" class="appIcon" style="margin: auto; display:block"></a>
+              <h3 class="lyricaly-font" style="text-align: center; margin-bottom: 20px; font-weight: bold">Lyricaly</h3>
+            </div> <!-- /lyricaly-icon -->
+            <!-- /App Icons -->
+          </div>
+          </div> <!-- /row -->
+
+      <div class="footer span12" style="padding: 10px">
+        <strong>
+          &copy;Slyce
+        </strong> 
+        <a class="" href="https://twitter.com/SlyceApps" class="twitter-follow-button" data-show-count="false" data-size="large">Follow @SlyceApps</a>
+      </div>
+
+		</div> <!-- /container -->  
+
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+    <script src="http://www.slyceapps.com/assets/js/jquery.js"></script>
+    <script src="http://www.slyceapps.com/assets/js/bootstrap-transition.js"></script>
+    <script src="http://www.slyceapps.com/assets/js/bootstrap-dropdown.js"></script>
+    <script src="http://www.slyceapps.com/assets/js/bootstrap-tab.js"></script>
+    <script src="http://www.slyceapps.com/assets/js/bootstrap-collapse.js"></script>
+    <script src="http://www.slyceapps.com/assets/js/bootstrap-carousel.js"></script>
+    <script src="http://www.slyceapps.com/assets/js/bootstrap-modal.js"></script>
+    <script src="http://www.slyceapps.com/assets/js/application.js"></script>
+
+    
+    
+    <!-- Start of StatCounter Code for Default Guide -->
+<script type="text/javascript">
+var sc_project=7384130; 
+var sc_invisible=1; 
+var sc_security="f03ca243"; 
+</script>
+<script type="text/javascript"
+src="http://www.statcounter.com/counter/counter.js"></script>
+<noscript><div class="statcounter"><a title="hit counter
+for tumblr" href="http://statcounter.com/tumblr/"
+target="_blank"><img class="statcounter"
+src="http://c.statcounter.com/7384130/0/f03ca243/1/"
+alt="hit counter for tumblr"></a></div></noscript>
+<!-- End of StatCounter Code for Default Guide -->
+
+  </body>
+</html>

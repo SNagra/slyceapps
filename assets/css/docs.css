@@ -1,0 +1,864 @@
+/* Add additional stylesheets below
+-------------------------------------------------- */
+/*
+  Bootstrap's documentation styles
+  Special styles for presenting Bootstrap's documentation and examples
+*/
+
+/*Slyce Styles*/
+      /*Home Page*/
+
+      #container {
+        border: none;
+      }
+
+      .home-lead {
+        margin-top: -90px;
+      }
+
+      .slyce_logo {
+        width: 400px;
+        height: 400px;
+        margin-top: -90px;
+        margin-bottom: -75px;
+      }
+
+      .homepage-header h1 {
+        color: rgba(51,51,51,1.0);
+        margin-bottom: 9px;
+        font-size: 100px;
+        font-weight: bold;
+        letter-spacing: -1px;
+        line-height: 1;
+      }
+
+/*      .s {
+        text-shadow: 0px 0px 5px rgba(0,108,207,1.0);
+      }
+
+      .l {
+        text-shadow: 0px 0px 5px rgba(251,185,78,1.0);
+      }
+
+       .y {
+        text-shadow: 0px 0px 5px rgba(221,78,12,1.0);
+      }
+
+       .c {
+        text-shadow: 0px 0px 5px rgba(41,143,86,1.0);
+      }
+
+       .slyce-e {
+        text-shadow: 0px 0px 5px rgba(159,51,13,1.0);
+      }*/
+
+
+
+      .our-projects {
+        border-radius: 25px;
+        border-top: 1px;
+        border-top-color: rgba(0,0,0,0.5);
+        /*box-shadow: inset 0px 0px 10px rgba(0,0,0,0.1);*/
+      }
+
+      .our-consulting {
+        text-align: center;
+      }
+
+      .btn-consulting {
+        font-size: 25px;
+        font-weight: bold;
+        margin: auto;
+        padding: 25px;
+      }
+
+      /*Shot Tracker Page*/
+       .sprites { 
+          background-image     : url(/images/shottrackersprite.png); 
+          background-color     : transparent; 
+          background-repeat    : no-repeat; 
+       } 
+       
+       #app_store_badge { 
+          height               : 104px; 
+          width                : 300px; 
+          background-position  : -0px -0px; 
+       } 
+       
+       #Icon-2x { 
+          height               : 114px; 
+          width                : 114px; 
+          background-position  : -300px -0px; 
+       } 
+       
+       #iPad1 { 
+          height               : 225px; 
+          width                : 169px; 
+          background-position  : -414px -0px; 
+       } 
+       
+       #iPad2 { 
+          height               : 225px; 
+          width                : 300px; 
+          background-position  : -583px -0px; 
+       } 
+       
+       #iPhone1 { 
+          height               : 200px; 
+          width                : 300px; 
+          background-position  : -883px -0px; 
+       } 
+       
+       #MultipleScreenshots { 
+          height               : 565px; 
+          width                : 959px; 
+          background-position  : -1183px -0px; 
+       }
+
+       .shot-tracker-rating {
+        margin: 5px;
+        color: rgba(248, 148, 37, 1.0);
+        text-align: center;
+        font-size: 40px;
+        text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.8);
+       }
+
+       .shot-tracker-btn {
+        display: block;
+        margin: auto;
+        width: 200px;
+        margin-top: 25px;
+       }
+
+      /*Reminders Page*/
+      .reminders-title {
+        text-shadow: 0px 2px 0px rgba(0,0,0, 0.4);
+      }
+
+      .reminders-copy {
+        color: rgb(132, 132, 132);
+        text-shadow: 0px 1px 0px rgba(132, 132, 132, 0.4);
+        text-align: center;
+        margin-top: 50px;
+      }
+
+      .reminders-copy strong {
+        color: #0074CC;
+        text-shadow: 0px 1px 0px rgba(0, 136, 204, 0.4);
+      }
+      
+      .reminders-copy #mce-EMAIL {
+        margin-top: 20px;
+      }
+
+      .reminders-copy .add-on{
+        margin-top: 20px;
+        margin-right: -5px;
+      }
+
+      /*Lyricaly Page*/
+      .lyricaly-title {
+        margin-bottom: 20px;
+        color: rgb(250,156,30);
+        text-shadow: 0px -2px 0px rgba(132,82,15,1.0);
+        font-size: 100px;
+        text-align: center;
+        font-family: 'Oleo Script', cursive;
+      }
+
+      .lyricaly-font {
+        text-align: center;
+        font-family: 'Oleo Script', cursive;
+      }
+
+      .lyricaly-copy {
+        color: rgba(132,82,16,1.0);
+        text-align: center;
+      }
+
+      .lyricaly-copy p {
+        font-size: 30px;
+        line-height: 35px;
+        text-shadow: 0px -1px 0px rgba(0,0,0,1.0);
+        font-weight: bold;
+      }
+
+      /*Hiiire Page*/
+      .hiiire-title {
+        text-shadow: 0px 1px 0px rgba(0,0,0,0.7);
+        font-size: 100px;
+        text-align: center;
+      }
+
+      .hiiire-copy {
+        text-align: center;
+      }
+
+      .hiiire-copy p {
+        font-size: 30px;
+        line-height: 35px;
+        text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.4);
+      }
+
+      .hiiire-copy p span {
+        font-size: 35px;
+        font-weight: bold;
+      }
+
+      .hiiire-copy p .work {
+        color: rgb(179,135,95);
+      }      
+
+      .hiiire-copy p .cash {
+        color: rgb(27,142,78);
+      }
+
+      .hiiire-copy p .small {
+        font-size: 25px;
+      }      
+
+      .hiiire-copy p .big {
+        font-size: 35px;
+      }
+      
+      .hiiire-copy p .apply {
+        color: rgb(0, 122, 204);
+      }
+
+      .h {
+        color: rgb(221, 78, 12);
+      }
+
+      .i1 {
+        color: rgb(87, 132, 137);
+      }
+
+      .i2 {
+        color: rgb(153, 169, 120);
+      }
+
+      .i3 {
+        color: rgb(244, 177, 38);
+      }
+
+      .r {
+        color: rgb(179, 135, 95);
+      }
+
+      .e {
+        color: rgb(191, 151, 178);
+      }
+
+      .hiiire-copy h5 {
+        color: rgba(128, 128, 128, 1.0);
+      }      
+
+      /*Feedback Page*/
+            /*Search Widget*/
+              #gsfn_search_widget img { border: none; }
+              #gsfn_search_widget { font-size: 12px; padding: 10px;}
+              #gsfn_search_widget a.widget_title { color: #000; display: block; margin-bottom: 10px; font-weight: bold; }
+              #gsfn_search_widget .powered_by { margin-top: 8px; padding-top: 8px; } 
+              #gsfn_search_widget .powered_by a { color: #333; font-size: 90%; }      
+              #gsfn_search_widget form { margin-bottom: 8px; }
+              #gsfn_search_widget form label { margin-bottom: 5px; display: block; }
+              #gsfn_search_widget form #gsfn_search_query { width: 60%; }
+              #gsfn_search_widget .gsfn_content { }
+              #gsfn_search_widget .gsfn_content li { text-align:left; margin-bottom:6px; }
+              #gsfn_search_widget .gsfn_content a.gsfn_link { line-height: 1; }
+              #gsfn_search_widget .gsfn_content span.time { font-size: 90%; padding-left: 3px; }
+              #gsfn_search_widget .gsfn_content p.gsfn_summary { margin-top: 2px }
+              #continue {margin: 5px;}
+
+            /*Topics Widget*/
+              #gsfn_list_widget img { border: none; }
+              #gsfn_list_widget { font-size: 12px; padding: 10px; }
+              #gsfn_list_widget a.widget_title { color: #000; display: block; margin-bottom: 10px; font-weight: bold; }
+              #gsfn_list_widget .powered_by { margin-top: 8px; padding-top: 8px}
+              #gsfn_list_widget .powered_by a { color: #333; font-size: 90%; }
+              #gsfn_list_widget #gsfn_content { }
+              #gsfn_list_widget #gsfn_content li { text-align:left; margin-bottom:6px; }
+              #gsfn_list_widget #gsfn_content a.gsfn_link { line-height: 1; }
+              #gsfn_list_widget #gsfn_content span.time { font-size: 90%; padding-left: 3px; }
+              #gsfn_list_widget #gsfn_content p.gsfn_summary { margin-top: 2px }
+
+      /*About Page*/
+      .mugshot {
+        border-radius: 5px;
+        -webkit-box-shadow: inset 0 3px 15px rgba(0,0,0,1);
+           -moz-box-shadow: inset 0 3px 15px rgba(0,0,0,1);
+                box-shadow: inset 0 3px 15px rgba(0,0,0,1);
+      }
+
+      .contact-images {
+        display: block;
+        margin: auto;
+        text-shadow: 0px 1px 0px rgba(132, 132, 132, 0.4);
+        text-decoration: bold;
+        text-align: center;
+      }
+      /*/About Page*/
+
+      /*Blog*/
+      /* --- tags --- */
+      .tags { margin-bottom: 10px;}
+      .tag { margin-bottom: 5px;}
+      
+      /* --- entry --- */
+      .entry { background:transparent; border-radius: 5px; padding-top: 0px; padding-bottom: 20px; position: relative; }
+      .entry > * { padding-left: 20px; padding-right: 20px; }
+      .date { margin-bottom: 10px; }
+      .entry .title { margin-bottom: 10px; }
+      .entry h2 { margin-top: 0px; }
+
+      /* --- author --- */
+      .author { margin-top: 5px; }
+      .author img { float: left; background-color: white; }
+      .author .author-name { line-height: 16px; padding-top: 8px; margin-left: 64px; }
+      .author .author-name .attribution { font-size: 80%; }
+      @media (max-width: 980px) { 
+        .author img { float: none; }  
+        .author .author-name { margin-left: 0; }
+      }  
+
+      .gradient {
+        border-top: 1px solid #DDD;
+        background-color: #FFFFFF;
+        background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#F5F5F5), to(#FFFFFF));
+        background-image: -webkit-linear-gradient(top, #F5F5F5, #FFFFFF);
+        background-image:    -moz-linear-gradient(top, #F5F5F5, #FFFFFF);
+        background-image:     -ms-linear-gradient(top, #F5F5F5, #FFFFFF);
+        background-image:      -o-linear-gradient(top, #F5F5F5, #FFFFFF);
+      }
+
+      .post-title h1 {
+        font-size: 60px;
+        line-height: 65px;
+        text-shadow: 0px 1px 0px rgba(0, 136, 204, 0.4);
+        padding-bottom: 20px;
+        padding-top: 20px
+      }
+
+      .post-body {
+        padding: 15px;
+      }
+
+      .post-author {
+        padding-top: 25px;
+      }
+
+      /* --- notes and comments --- */
+      .notes-container, .comments-container { background-color: white; border-radius: 5px; position: relative; margin-top: 20px; }
+      .notes-container .notes, .comments-container #disqus_thread { padding: 20px; margin: 0; }
+      .notes-container ol.notes { list-style: none; }
+
+      /* --- sharing links ---*/
+      .share-links { margin-top: 10px; }
+
+      .shadow {box-shadow: 0px 0px 7px 2px #ccc;}
+      /*/Blog*/
+      
+      .appIcon {
+        height: 100px;
+        width: 100px;
+        border-radius: 18%;
+        box-shadow: 0px 0px 3px 2px #ccc;
+        margin-top: 10px;
+      }
+
+      /*Consulting*/
+
+      .consulting-title {
+        text-shadow: 0px 2px 0px rgba(0,0,0,0.3);
+      }
+
+      .grey-shadow {
+        text-shadow: 0px 2px 0px rgba(0,0,0,0.2);
+      }
+
+      .white-shadow {
+        color: rgba(0,0,0,0.65);
+        text-shadow: 0px 2px 0px rgba(255,255,255,1.0);
+      }
+
+      .white-shadow dd{
+        color: rgba(0,0,0,0.65);
+        text-shadow: 0px 2px 0px rgba(255,255,255,1.0);
+      }
+
+      .shadow-inverted {
+        color: rgba(100,100,100,0.75);
+        text-shadow: 0px -1px 0px rgba(0,0,0,1.0);
+      }
+
+      .current-apps {
+        text-align: center;
+      }
+
+      .local {
+        text-align: center;
+        font-weight: bold;
+      }
+
+      .iOS_downloads {
+        margin-top: 40px;
+      }
+
+      .daily_devices {
+        color: rgb(0, 122, 204);
+        text-shadow: 0 1px 0 rgba(0,0,0,0.4);
+      }
+
+      .fragmentation {
+        color: rgb(220, 57, 18);
+        text-shadow: 0 1px 0 rgba(0,0,0,0.4);
+      }
+
+      .loyalty {
+        color: rgb(251, 151, 0);
+        text-shadow: 0 1px 0 rgba(0,0,0,0.4);
+      }
+
+      .why_ios_bullets {
+        font-weight: bold;
+      }
+
+      .pieChart {
+      }
+
+/*/Slyce Styles*/
+
+/* Body and structure
+-------------------------------------------------- */
+body {
+  position: relative;
+  padding-top: 90px;
+  background-color: #fff;
+  background-repeat: repeat-x;
+  background-position: 0 40px;
+}
+
+
+/* Tweak navbar brand link to be super sleek
+-------------------------------------------------- */
+.navbar-fixed-top .brand {
+  padding-right: 0;
+  padding-left: 0;
+  margin-left: 20px;
+  float: left;
+  font-weight: bold;
+  color: #ffffff;
+  text-shadow: 0 1px 0 rgba(0,0,0,.8), 0 0 30px rgba(0,0,0,1.0);
+  -webkit-transition: all .2s linear;
+     -moz-transition: all .2s linear;
+          transition: all .2s linear;
+}
+.navbar-fixed-top .brand:hover {
+  text-decoration: none;
+}
+
+
+/* Space out sub-sections more
+-------------------------------------------------- */
+section {
+  padding-top: 60px;
+}
+
+/* Faded out hr */
+hr.soften {
+  height: 1px;
+  margin: 54px 0;
+  background-image: -webkit-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,.1), rgba(0,0,0,0));
+  background-image:    -moz-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,.1), rgba(0,0,0,0));
+  background-image:     -ms-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,.1), rgba(0,0,0,0));
+  background-image:      -o-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,.1), rgba(0,0,0,0));
+  border: 0;
+}
+
+
+/* Jumbotrons
+-------------------------------------------------- */
+.jumbotron {
+  position: relative;
+}
+.jumbotron h1 {
+  margin-bottom: 9px;
+  font-size: 81px;
+  font-weight: bold;
+  letter-spacing: -1px;
+  line-height: 1;
+}
+.jumbotron p {
+  margin-bottom: 18px;
+  font-weight: 300;
+}
+.jumbotron .btn-large {
+  font-size: 20px;
+  font-weight: normal;
+  padding: 14px 24px;
+  margin-right: 10px;
+  -webkit-border-radius: 6px;
+     -moz-border-radius: 6px;
+          border-radius: 6px;
+}
+.jumbotron .btn-large small {
+  font-size: 14px;
+}
+
+/* Masthead (docs home) */
+.masthead {
+  padding-top: 36px;
+  margin-bottom: 72px;
+}
+.masthead h1,
+.masthead p {
+  text-align: center;
+}
+.masthead h1 {
+  margin-bottom: 18px;
+}
+.masthead p {
+  margin-left: 5%;
+  margin-right: 5%;
+  font-size: 30px;
+  line-height: 36px;
+}
+
+
+/* Specific jumbotrons
+------------------------- */
+/* supporting docs pages */
+.subhead {
+  padding-bottom: 0;
+  margin-bottom: 9px;
+}
+.subhead h1 {
+  font-size: 54px;
+}
+
+/* Subnav */
+.subnav {
+  width: 100%;
+  height: 36px;
+  background-color: #eeeeee; /* Old browsers */
+  background-repeat: repeat-x; /* Repeat the gradient */
+  background-image: -moz-linear-gradient(top, #f5f5f5 0%, #eeeeee 100%); /* FF3.6+ */
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f5f5f5), color-stop(100%,#eeeeee)); /* Chrome,Safari4+ */
+  background-image: -webkit-linear-gradient(top, #f5f5f5 0%,#eeeeee 100%); /* Chrome 10+,Safari 5.1+ */
+  background-image: -ms-linear-gradient(top, #f5f5f5 0%,#eeeeee 100%); /* IE10+ */
+  background-image: -o-linear-gradient(top, #f5f5f5 0%,#eeeeee 100%); /* Opera 11.10+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f5f5f5', endColorstr='#eeeeee',GradientType=0 ); /* IE6-9 */
+  background-image: linear-gradient(top, #f5f5f5 0%,#eeeeee 100%); /* W3C */
+  border: 1px solid #e5e5e5;
+  -webkit-border-radius: 4px;
+     -moz-border-radius: 4px;
+          border-radius: 4px;
+}
+.subnav .nav {
+  margin-bottom: 0;
+}
+.subnav .nav > li > a {
+  margin: 0;
+  padding-top:    11px;
+  padding-bottom: 11px;
+  border-left: 1px solid #f5f5f5;
+  border-right: 1px solid #e5e5e5;
+  -webkit-border-radius: 0;
+     -moz-border-radius: 0;
+          border-radius: 0;
+}
+.subnav .nav > .active > a,
+.subnav .nav > .active > a:hover {
+  padding-left: 13px;
+  color: #777;
+  background-color: #e9e9e9;
+  border-right-color: #ddd;
+  border-left: 0;
+  -webkit-box-shadow: inset 0 3px 5px rgba(0,0,0,.05);
+     -moz-box-shadow: inset 0 3px 5px rgba(0,0,0,.05);
+          box-shadow: inset 0 3px 5px rgba(0,0,0,.05);
+}
+.subnav .nav > .active > a .caret,
+.subnav .nav > .active > a:hover .caret {
+  border-top-color: #777;
+}
+.subnav .nav > li:first-child > a,
+.subnav .nav > li:first-child > a:hover {
+  border-left: 0;
+  padding-left: 12px;
+  -webkit-border-radius: 4px 0 0 4px;
+     -moz-border-radius: 4px 0 0 4px;
+          border-radius: 4px 0 0 4px;
+}
+.subnav .nav > li:last-child > a {
+  border-right: 0;
+}
+.subnav .dropdown-menu {
+  -webkit-border-radius: 0 0 4px 4px;
+     -moz-border-radius: 0 0 4px 4px;
+          border-radius: 0 0 4px 4px;
+}
+
+/* Fixed subnav on scroll, but only for 980px and up (sorry IE!) */
+@media (min-width: 980px) {
+  .subnav-fixed {
+    position: fixed;
+    top: 40px;
+    left: 0;
+    right: 0;
+    z-index: 1020; /* 10 less than .navbar-fixed to prevent any overlap */
+    border-color: #d5d5d5;
+    border-width: 0 0 1px; /* drop the border on the fixed edges */
+    -webkit-border-radius: 0;
+       -moz-border-radius: 0;
+            border-radius: 0;
+    -webkit-box-shadow: inset 0 1px 0 #fff, 0 1px 5px rgba(0,0,0,.1);
+       -moz-box-shadow: inset 0 1px 0 #fff, 0 1px 5px rgba(0,0,0,.1);
+            box-shadow: inset 0 1px 0 #fff, 0 1px 5px rgba(0,0,0,.1);
+    filter: progid:DXImageTransform.Microsoft.gradient(enabled=false); /* IE6-9 */
+  }
+  .subnav-fixed .nav {
+    width: 938px;
+    margin: 0 auto;
+    padding: 0 1px;
+  }
+  .subnav .nav > li:first-child > a,
+  .subnav .nav > li:first-child > a:hover {
+    -webkit-border-radius: 0;
+       -moz-border-radius: 0;
+            border-radius: 0;
+  }
+}
+
+/* Footer
+-------------------------------------------------- */
+.footer {
+  margin-top: 45px;
+  padding: 35px 0 36px;
+  border-top: 1px solid #e5e5e5;
+}
+.footer p {
+  margin-bottom: 0;
+  color: #555;
+}
+
+/* Misc
+-------------------------------------------------- */
+
+/* Make tables spaced out a bit more */
+h2 + table,
+h3 + table,
+h4 + table,
+h2 + .row {
+  margin-top: 5px;
+}
+
+/* Responsive table
+------------------------- */
+.responsive-utilities th small {
+  display: block;
+  font-weight: normal;
+  color: #999;
+}
+.responsive-utilities tbody th {
+  font-weight: normal;
+}
+.responsive-utilities td {
+  text-align: center;
+}
+.responsive-utilities td.is-visible {
+  color: #468847;
+  background-color: #dff0d8 !important;
+}
+.responsive-utilities td.is-hidden {
+  color: #ccc;
+  background-color: #f9f9f9 !important;
+}
+
+/* Responsive Docs
+-------------------------------------------------- */
+@media (max-width: 480px) {
+
+  /* Reduce padding above jumbotron */
+  body {
+    padding-top: 70px;
+  }
+
+  /* Change up some type stuff */
+  h2 {
+    margin-top: 27px;
+  }
+  h2 small {
+    display: block;
+    line-height: 18px;
+  }
+  h3 {
+    margin-top: 18px;
+  }
+
+  /* Adjust the jumbotron */
+  .jumbotron h1,
+  .jumbotron p {
+    text-align: center;
+    margin-right: 0;
+  }
+  .jumbotron h1 {
+    font-size: 45px;
+    margin-right: 0;
+  }
+  .jumbotron p {
+    margin-right: 0;
+    margin-left: 0;
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .jumbotron .btn {
+    display: block;
+    font-size: 18px;
+    padding: 10px 14px;
+    margin: 0 auto 10px;
+  }
+  /* Masthead (home page jumbotron) */
+  .masthead {
+    padding-top: 0;
+  }
+
+  table code {
+    white-space: normal;
+    word-wrap: break-word;
+    word-break: break-all;
+  }
+
+  /* Modal example */
+  .modal-example .modal {
+    position: relative;
+    top: auto;
+    right: auto;
+    bottom: auto;
+    left: auto;
+  }
+
+}
+
+
+@media (max-width: 768px) {
+
+  /* Remove any padding from the body */
+  body {
+    padding-top: 0;
+  }
+
+  /* Jumbotron buttons */
+  .jumbotron .btn {
+    margin-bottom: 10px;
+  }
+
+  /* Subnav */
+  .subnav {
+    position: static;
+    top: auto;
+    z-index: auto;
+    width: auto;
+    height: auto;
+    background: #fff; /* whole background property since we use a background-image for gradient */
+    -webkit-box-shadow: none;
+       -moz-box-shadow: none;
+            box-shadow: none;
+  }
+  .subnav .nav > li {
+    float: none;
+  }
+  .subnav .nav > li > a {
+    border: 0;
+  }
+  .subnav .nav > li + li > a {
+    border-top: 1px solid #e5e5e5;
+  }
+  .subnav .nav > li:first-child > a,
+  .subnav .nav > li:first-child > a:hover {
+      -webkit-border-radius: 4px 4px 0 0;
+         -moz-border-radius: 4px 4px 0 0;
+              border-radius: 4px 4px 0 0;
+  }
+
+  /* Popovers */
+  .large-bird {
+    display: none;
+  }
+  .popover-well .popover-wrapper {
+    margin-left: 0;
+  }
+
+  /* Space out the show-grid examples */
+  .show-grid [class*="span"] {
+    margin-bottom: 5px;
+  }
+
+  /* Unfloat the back to top link in footer */
+  .footer .pull-right {
+    float: none;
+  }
+  .footer p {
+    margin-bottom: 9px;
+  }
+
+}
+
+
+@media (min-width: 480px) and (max-width: 768px) {
+
+  /* Scale down the jumbotron content */
+  .jumbotron h1 {
+    font-size: 54px;
+  }
+  .jumbotron p {
+    margin-right: 0;
+    margin-left: 0;
+  }
+
+}
+
+
+@media (min-width: 768px) and (max-width: 980px) {
+
+  /* Remove any padding from the body */
+  body {
+    padding-top: 0;
+  }
+
+  /* Scale down the jumbotron content */
+  .jumbotron h1 {
+    font-size: 72px;
+  }
+
+}
+
+
+@media (max-width: 980px) {
+
+  /* Unfloat brand */
+  .navbar-fixed-top .brand {
+    float: left;
+    margin-left: 0;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  /* Inline-block quick links for more spacing */
+  .quick-links li {
+    display: inline-block;
+    margin: 5px;
+  }
+
+}
+
+
+/* LARGE DESKTOP SCREENS */
+@media (min-width: 1210px) {
+
+  /* Update subnav container */
+  .subnav-fixed .nav {
+    width: 1168px; /* 2px less to account for left/right borders being removed when in fixed mode */
+  }
+
+}
